@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  metabase:
+    image: docker.io/metabase/metabase:v0.50.26.1
+    volumes:
+      - ../metabase:/mnt/metabase
+    working_dir: /mnt/metabase
+    ports:
+      - 3000:3000
