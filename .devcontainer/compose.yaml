@@ -2,7 +2,9 @@ version: "3.8"
 
 services:
   metabase:
-    image: docker.io/metabase/metabase:v0.50.26.1
+    build:
+      context: .
+      image: docker.io/metabase/metabase:v0.50.26.1
     volumes:
       - ../metabase:/mnt/metabase
     environment:
