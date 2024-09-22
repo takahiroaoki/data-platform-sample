@@ -4,8 +4,8 @@
 		"docker-compose.debug.yaml",
 		"docker-compose.yaml"
 	],
-	"service": "metabase",
-	"workspaceFolder": "/",
+	"service": "debug",
+	"workspaceFolder": "/mnt/debug",
 	"customizations": {
 		"vscode": {
 			"extensions": []
