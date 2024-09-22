@@ -1,8 +1,8 @@
 {
-  "name": "data-platform-sample",
-  "dockerComposeFile": "compose.yaml",
-  "service": "metabase",
-	"workspaceFolder": "/mnt/metabase",
+	"name": "data-platform-sample",
+	"dockerComposeFile": "compose.debug.yaml",
+	"service": "debug",
+	"workspaceFolder": "/mnt/debug",
 	"customizations": {
 		"vscode": {
 			"extensions": []
