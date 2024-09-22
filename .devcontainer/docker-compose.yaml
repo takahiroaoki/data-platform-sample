@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   postgres:
-    image: bitnami/postgresql:15.8.0
+    image: bitnami/postgresql:16.4.0
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
@@ -12,8 +12,6 @@ services:
     restart: always
   metabase:
     image: metabase/metabase:v0.50.26.1
-    volumes:
-      - ../metabase:/mnt/metabase
     environment:
       MB_DB_TYPE: postgres
       MB_DB_HOST: postgres
