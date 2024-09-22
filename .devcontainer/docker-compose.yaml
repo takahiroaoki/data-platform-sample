@@ -2,7 +2,9 @@ version: "3.8"
 
 services:
   fluentd:
-    image: fluentd:v1.17-1
+    build:
+      context: .
+      dockerfile: Dockerfile.fluentd
     volumes:
       - ../fluentd/etc:/fluentd/etc
       - ../fluentd/log:/fluentd/log

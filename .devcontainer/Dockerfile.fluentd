@@ -1,0 +1,8 @@
+FROM fluentd:v1.17-1
+
+USER root
+
+# add plugins
+#RUN gem install XXXX
+
+USER fluent
