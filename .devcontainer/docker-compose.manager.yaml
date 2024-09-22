@@ -1,13 +1,13 @@
 version: "3.8"
 
 services:
-  debug:
+  manager:
     build:
       context: .
-      dockerfile: Dockerfile.debug
+      dockerfile: Dockerfile.manager
     volumes:
-      - ..:/mnt/debug
-    working_dir: /mnt/debug
+      - ..:/mnt/manager
+    working_dir: /mnt/manager
     tty: true
     depends_on:
       - postgres

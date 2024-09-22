@@ -5,6 +5,7 @@ RUN dnf install -y \
          git \
          sudo \
          make \
+         golang.x86_64 \
          postgresql15.x86_64 \
      && rm -rf /var/cache/dnf/* \
      && dnf clean all
@@ -12,3 +13,5 @@ RUN dnf install -y \
 # useradd
 RUN useradd "dev-user" && echo "dev-user ALL=NOPASSWD: ALL" >> /etc/sudoers
 USER dev-user
+
+RUN go install -tags postgres github.com/golang-migrate/migrate/v4/cmd/migrate@v4.17.1

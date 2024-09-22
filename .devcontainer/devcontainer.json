@@ -1,14 +1,16 @@
 {
 	"name": "data-platform-sample",
 	"dockerComposeFile": [
-		"docker-compose.debug.yaml",
+		"docker-compose.manager.yaml",
 		"docker-compose.yaml"
 	],
-	"service": "debug",
-	"workspaceFolder": "/mnt/debug",
+	"service": "manager",
+	"workspaceFolder": "/mnt/manager",
 	"customizations": {
 		"vscode": {
-			"extensions": []
+			"extensions": [
+				"golang.Go"
+			]
 		}
 	}
 }
