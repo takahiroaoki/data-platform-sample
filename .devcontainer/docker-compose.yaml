@@ -4,7 +4,8 @@ services:
   fluentd:
     image: fluentd:v1.17-1
     volumes:
-      - ../fluentd/fluent.conf:/fluentd/etc/fluent.conf
+      - ../fluentd/etc:/fluentd/etc
+      - ../fluentd/log:/fluentd/log
       - ../nfs_mock:/nfs
   postgres:
     image: bitnami/postgresql:15.8.0
