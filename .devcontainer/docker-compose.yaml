@@ -1,12 +1,33 @@
 version: "3.8"
 
 services:
+  postgres:
+    image: bitnami/postgresql:15.8.0
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DATABASE: metabase
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports: 
+      - 5432:5432
+    restart: always
   metabase:
     image: metabase/metabase:v0.50.26.1
     volumes:
       - ../metabase:/mnt/metabase
     environment:
-      - MB_CONFIG_FILE_PATH=/mnt/metabase/config.yaml
-    working_dir: /mnt/metabase
+      MB_DB_TYPE: postgres
+      MB_DB_HOST: postgres
+      MB_DB_DBNAME: metabase
+      MB_DB_PORT: 5432
+      MB_DB_USER: postgres
+      MB_DB_PASS: password
+      MB_CONFIG_FILE_PATH: /mnt/metabase/config.yaml
     ports:
       - 3000:3000
+    depends_on:
+      - postgres
+
+volumes:
+  - postgres_data

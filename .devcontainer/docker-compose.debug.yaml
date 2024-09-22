@@ -9,3 +9,6 @@ services:
       - ..:/mnt/debug
     working_dir: /mnt/debug
     tty: true
+    depends_on:
+      - postgres
+      - metabase
