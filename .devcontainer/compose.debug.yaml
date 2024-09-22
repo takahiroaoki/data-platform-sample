@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  debug:
+    build:
+      context: .
+      containerfile: Containerfile.debug
+    volumes:
+      - ..:/mnt/debug
+    working_dir: /mnt/debug
