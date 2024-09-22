@@ -1,1 +1,1 @@
-CREATE DATABASE sample_db;
+CREATE DATABASE demodb;
