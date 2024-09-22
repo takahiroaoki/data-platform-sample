@@ -2,11 +2,7 @@ version: "3.8"
 
 services:
   metabase:
-    build:
-      context: .
-      image: docker.io/metabase/metabase:v0.50.26.1
-    volumes:
-      - ../metabase:/mnt/metabase
+    image: metabase/metabase:v0.50.26.1
     environment:
       - MB_CONFIG_FILE_PATH=/mnt/metabase/config.yaml
     working_dir: /mnt/metabase
