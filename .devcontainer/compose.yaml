@@ -5,6 +5,8 @@ services:
     image: docker.io/metabase/metabase:v0.50.26.1
     volumes:
       - ../metabase:/mnt/metabase
+    environment:
+      - MB_CONFIG_FILE_PATH=/mnt/metabase/config.yaml
     working_dir: /mnt/metabase
     ports:
       - 3000:3000
