@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"migration/cmd"
+	"migration/util"
+)
 
 func main() {
-	fmt.Println("Hello world")
+	if err := cmd.NewBundle().Execute(); err != nil {
+		util.FatalLog(fmt.Sprintf("Failed to execute the command. Error: %v", err))
+	}
 }
