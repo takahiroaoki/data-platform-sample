@@ -1,2 +1,2 @@
 psql:
-	psql -h postgres -U postgres -d metabase
+	psql -h ${POSTGRES_HOST} -U ${POSTGRES_USER} -d ${POSTGRES_DATABASE}

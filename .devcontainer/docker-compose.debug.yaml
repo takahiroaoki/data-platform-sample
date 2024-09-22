@@ -5,6 +5,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.debug
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_USER: $POSTGRES_USER
+      POSTGRES_DATABASE: $POSTGRES_DATABASE
     volumes:
       - ..:/mnt/debug
     working_dir: /mnt/debug
