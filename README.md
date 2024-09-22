@@ -10,7 +10,7 @@ After all containers up, visit `http://localhost:3000` and set initial configura
 
 ## Debug
 ```
-# In the debug container @/mnt/debug
+# In the manager container @/mnt/debug
 # then enter "password"
 $ make psql
 ```
