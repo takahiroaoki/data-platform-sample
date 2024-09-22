@@ -13,3 +13,5 @@ RUN dnf install -y \
 # useradd
 RUN useradd "dev-user" && echo "dev-user ALL=NOPASSWD: ALL" >> /etc/sudoers
 USER dev-user
+
+RUN go install -tags postgres github.com/golang-migrate/migrate/v4/cmd/migrate@v4.17.1
