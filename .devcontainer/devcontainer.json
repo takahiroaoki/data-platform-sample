@@ -9,7 +9,7 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"golang.Go"
+				"cweijan.vscode-postgresql-client2"
 			]
 		}
 	}
