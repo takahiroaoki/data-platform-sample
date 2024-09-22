@@ -1,7 +1,6 @@
 include .devcontainer/.env
 
-psql:
-	psql -h postgres -U $(POSTGRES_USER)
+init-db:create-db migrate-up
 
 create-db:
 	psql -h postgres -U $(POSTGRES_USER) -f ./database/init/create_database.sql
@@ -17,3 +16,6 @@ migrate-down:
 
 db-sample:
 	psql -h postgres -U $(POSTGRES_USER) -d demodb -f ./database/devutil/sample.sql
+
+psql:
+	psql -h postgres -U $(POSTGRES_USER)
