@@ -5,6 +5,7 @@ RUN dnf install -y \
          git \
          sudo \
          make \
+         golang.x86_64 \
          postgresql15.x86_64 \
      && rm -rf /var/cache/dnf/* \
      && dnf clean all
