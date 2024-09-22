@@ -1,0 +1,11 @@
+{
+  "name": "data-platform-sample",
+  "dockerComposeFile": "compose.yaml",
+  "service": "metabase",
+	"workspaceFolder": "/mnt/metabase",
+	"customizations": {
+		"vscode": {
+			"extensions": []
+		}
+	}
+}
