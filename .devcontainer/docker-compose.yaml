@@ -1,6 +1,11 @@
 version: "3.8"
 
 services:
+  fluentd:
+    image: fluentd:v1.17-1
+    volumes:
+      - ../fluentd/fluent.conf:/fluentd/etc/fluent.conf
+      - ../nfs_mock:/nfs
   postgres:
     image: bitnami/postgresql:15.8.0
     environment:
