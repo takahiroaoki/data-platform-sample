@@ -1,6 +1,6 @@
-CREATE TABLE demodb.users(
-    id INT NOT NULL AUTO_INCREMENT,
+CREATE TABLE users(
+    id INT NOT NULL,
     email VARCHAR(320) NOT NULL,
 
     PRIMARY KEY(id)
-) ENGINE = innoDB DEFAULT CHARSET = utf8;
+);
