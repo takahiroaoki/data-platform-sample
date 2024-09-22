@@ -4,7 +4,7 @@ services:
   debug:
     build:
       context: .
-      containerfile: Containerfile.debug
+      dockerfile: Dockerfile.debug
     volumes:
       - ..:/mnt/debug
     working_dir: /mnt/debug
