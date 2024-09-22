@@ -1,6 +1,9 @@
 {
 	"name": "data-platform-sample",
-	"dockerComposeFile": "docker-compose.debug.yaml",
+	"dockerComposeFile": [
+		"docker-compose.debug.yaml",
+		"docker-compose.yaml"
+	],
 	"service": "debug",
 	"workspaceFolder": "/mnt/debug",
 	"customizations": {
