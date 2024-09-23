@@ -4,8 +4,8 @@
 		"docker-compose.manager.yaml",
 		"docker-compose.yaml"
 	],
-	"service": "manager",
-	"workspaceFolder": "/mnt/manager",
+	"service": "broker",
+	"workspaceFolder": "/workspaces/data-platform-sample",
 	"customizations": {
 		"vscode": {
 			"extensions": [
