@@ -26,7 +26,7 @@ services:
       KAFKA_NUM_PARTITIONS: 3
       TOPIC: $TOPIC_TAG
     volumes:
-      - ../kafka/create_topic.sh:/home/appuser/create_topic.sh
+      - ../kafka/create_topic.sh:/usr/local/bin/create_topic.sh
     #command: create_topic.sh
   postgres:
     image: bitnami/postgresql:15.8.0
