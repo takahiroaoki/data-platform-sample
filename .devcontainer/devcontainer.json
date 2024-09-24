@@ -1,7 +1,6 @@
 {
 	"name": "data-platform-sample",
 	"dockerComposeFile": [
-		"docker-compose.manager.yaml",
 		"docker-compose.yaml"
 	],
 	"service": "manager",
