@@ -1,8 +1,0 @@
-FROM fluent/fluentd:v1.17-debian-1
-
-USER root
-
-# add plugins
-RUN gem install fluent-plugin-kafka
-
-USER fluent

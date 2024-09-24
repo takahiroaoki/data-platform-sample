@@ -10,6 +10,5 @@ services:
     working_dir: /mnt/manager
     tty: true
     depends_on:
-      - fluentd
       - postgres
       - metabase
