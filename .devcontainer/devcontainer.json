@@ -1,5 +1,5 @@
 {
-	"name": "data-platform-sample",
+	"name": "metabase-sample",
 	"dockerComposeFile": [
 		"docker-compose.yaml",
 		"docker-compose.manager.yaml"

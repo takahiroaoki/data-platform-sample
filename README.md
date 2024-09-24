@@ -1,4 +1,4 @@
-# data-platform-sample
+# metabase-sample
 
 ## Requirement
 - Docker Desktop
